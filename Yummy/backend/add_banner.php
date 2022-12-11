@@ -12,7 +12,7 @@ include'./inc/header.php';
                 <div class="row aling-items-center">
                         <div class="col-lg-3">
                            <label for="bannerimg"><img class="ImageplaceHolder" src="https://i1.wp.com/www.slntechnologies.com/wp-content/uploads/2017/08/ef3-placeholder-image.jpg?ssl=1" alt="" style=" width:100%;display:block "></label> 
-                            <?php
+                                             <?php
                                                 if(isset($_SESSION['errors']['banner_image'])){
                                                     ?>
                                                 <span class="text-danger">
@@ -20,7 +20,7 @@ include'./inc/header.php';
                                                     </span>
                                                     <?php 
                                                 }
-                                                ?>
+                                            ?>  
                            <input type="file" class=" d-none bannerInputImage" id="bannerimg" name="banner_image">
                         </div>
                         <div class="col-lg-9">
@@ -28,7 +28,7 @@ include'./inc/header.php';
                                 Insert a Banner Title <span class="text-danger">*</span>
                                 <input type="text" name="title" class="form-control">
 
-                                             <?php
+                                            <?php
                                                 if(isset($_SESSION['errors']['title'])){
                                                     ?>
                                                 <span class="text-danger">
@@ -36,12 +36,12 @@ include'./inc/header.php';
                                                     </span>
                                                     <?php 
                                                 }
-                                                ?>
+                                            ?>
                             </label>
                             <label class="w-100">
                                 Insert a Banner Video Link <span class="text-danger">*</span>
                                 <input type="text" name="video" class="form-control">
-                                <?php
+                                         <?php
                                                 if(isset($_SESSION['errors']['video'])){
                                                     ?>
                                                 <span class="text-danger">
@@ -49,7 +49,7 @@ include'./inc/header.php';
                                                     </span>
                                                     <?php 
                                                 }
-                                                ?>
+                                         ?>
                             </label>
                             <label class="w-100">
                                 Insert a Banner Description <span class="text-danger">*</span>

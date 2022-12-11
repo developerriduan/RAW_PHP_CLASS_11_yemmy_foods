@@ -8,7 +8,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2020</span>
+                        <span>Copy Right &copy; 2022 Template has been Dseingned by <p class="d-inline text-danger border-bottom ">Riduan</p></span>
                     </div>
                 </div>
             </footer>

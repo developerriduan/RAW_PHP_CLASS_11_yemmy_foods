@@ -36,7 +36,6 @@ if(isset($_POST['submit'])){
 
         if(mysqli_num_rows($data) > 0){
             //Email found;
-
             $query = "SELECT * FROM user WHERE email = '$email' AND password = '$enc_password'";
             $data = mysqli_query($conn,$query);
             if(mysqli_num_rows($data)>0){
@@ -44,6 +43,7 @@ if(isset($_POST['submit'])){
                 $auth = mysqli_fetch_assoc($data);
                 $_SESSION['auth'] = $auth;
                 header("location:../backend/dashboard.php");
+                
             }
             else{
                 //Password Errors
